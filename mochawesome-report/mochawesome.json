@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 2,
-    "start": "2019-07-09T19:45:09.023Z",
-    "end": "2019-07-09T19:45:45.568Z",
-    "duration": 36545,
+    "start": "2021-09-28T07:07:51.866Z",
+    "end": "2021-09-28T07:08:29.231Z",
+    "duration": 37365,
     "testsRegistered": 2,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "cd91e56a-68ad-44f2-80df-fa4030d7a8bd",
+    "uuid": "2ae76760-cf3c-4e16-b714-617ae9958e09",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,23 +28,23 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "1748ec64-d592-4484-ab9e-e81d7c576fd4",
+        "uuid": "31c1b314-7bef-44f5-9855-2aa9540ac919",
         "title": "Google search automated testing",
-        "fullFile": "/home/nahid/Node/Automation-With-Selenium-And-Node.js/test/homePage.test.js",
+        "fullFile": "/Users/huynguyen/Random_stuff/check_live_account/test/homePage.test.js",
         "file": "/test/homePage.test.js",
         "beforeHooks": [
           {
             "title": "\"before each\" hook",
             "fullTitle": "Google search automated testing \"before each\" hook",
             "timedOut": false,
-            "duration": 3407,
+            "duration": 1927,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "page = new Page();\ndriver = page.driver;\nawait page.visit('https://www.google.com/');",
             "err": {},
             "isRoot": false,
-            "uuid": "8944f123-6bd9-4188-8de1-4612a668f003",
+            "uuid": "3184f718-7254-40ce-af86-86969fbf66da",
             "isHook": true,
             "skipped": false
           }
@@ -54,14 +54,14 @@
             "title": "\"after each\" hook",
             "fullTitle": "Google search automated testing \"after each\" hook",
             "timedOut": false,
-            "duration": 73,
+            "duration": 52,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "await page.quit();",
             "err": {},
             "isRoot": false,
-            "uuid": "4d5641da-9f03-4740-8140-6204b3c165b7",
+            "uuid": "34de0df0-a62f-4db5-ad79-420264603697",
             "isHook": true,
             "skipped": false
           }
@@ -71,18 +71,18 @@
             "title": "find the input box and google search button",
             "fullTitle": "Google search automated testing find the input box and google search button",
             "timedOut": false,
-            "duration": 15006,
+            "duration": 15003,
             "state": "failed",
             "pass": false,
             "fail": true,
             "pending": false,
             "code": "const result = await page.findInputAndButton();\nexpect(result.inputEnabled).to.equal(true);\nexpect(result.buttonText).to.include('Google');",
             "err": {
-              "message": "TimeoutError: Looking for element\nWait timed out after 15003ms",
-              "estack": "TimeoutError: Looking for element\nWait timed out after 15003ms\n    at /home/nahid/Node/Automation-With-Selenium-And-Node.js/node_modules/selenium-webdriver/lib/webdriver.js:834:17\n    at processTicksAndRejections (internal/process/task_queues.js:89:5)"
+              "message": "TimeoutError: Looking for element\nWait timed out after 15002ms",
+              "estack": "TimeoutError: Looking for element\nWait timed out after 15002ms\n    at /Users/huynguyen/Random_stuff/check_live_account/node_modules/selenium-webdriver/lib/webdriver.js:834:17\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
             },
             "isRoot": false,
-            "uuid": "1e31ed89-df08-4b2e-8d7b-ea78bc6f1f1c",
+            "uuid": "73395ee6-7693-4daf-9077-9c440b94b421",
             "isHook": false,
             "skipped": false
           },
@@ -90,18 +90,18 @@
             "title": "put keyword in search box and click search button",
             "fullTitle": "Google search automated testing put keyword in search box and click search button",
             "timedOut": false,
-            "duration": 15010,
+            "duration": 15001,
             "state": "failed",
             "pass": false,
             "fail": true,
             "pending": false,
             "code": "const result = await page.submitKeywordAndGetResult();\nexpect(result.length).to.be.above(10);",
             "err": {
-              "message": "TimeoutError: Looking for element\nWait timed out after 15010ms",
-              "estack": "TimeoutError: Looking for element\nWait timed out after 15010ms\n    at /home/nahid/Node/Automation-With-Selenium-And-Node.js/node_modules/selenium-webdriver/lib/webdriver.js:834:17\n    at processTicksAndRejections (internal/process/task_queues.js:89:5)"
+              "message": "TimeoutError: Looking for element\nWait timed out after 15000ms",
+              "estack": "TimeoutError: Looking for element\nWait timed out after 15000ms\n    at /Users/huynguyen/Random_stuff/check_live_account/node_modules/selenium-webdriver/lib/webdriver.js:834:17\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
             },
             "isRoot": false,
-            "uuid": "47e01e4d-1465-400b-9044-4c958b85ad55",
+            "uuid": "c1a3edb1-1871-4606-a641-21818120496d",
             "isHook": false,
             "skipped": false
           }
@@ -109,12 +109,12 @@
         "suites": [],
         "passes": [],
         "failures": [
-          "1e31ed89-df08-4b2e-8d7b-ea78bc6f1f1c",
-          "47e01e4d-1465-400b-9044-4c958b85ad55"
+          "73395ee6-7693-4daf-9077-9c440b94b421",
+          "c1a3edb1-1871-4606-a641-21818120496d"
         ],
         "pending": [],
         "skipped": [],
-        "duration": 30016,
+        "duration": 30004,
         "root": false,
         "rootEmpty": false,
         "_timeout": 50000
@@ -129,5 +129,5 @@
     "rootEmpty": true,
     "_timeout": 2000
   },
-  "copyrightYear": 2019
+  "copyrightYear": 2021
 }
